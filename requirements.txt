@@ -1,3 +1,4 @@
 owslib
 geopandas
 lonboard
+pyarrow
