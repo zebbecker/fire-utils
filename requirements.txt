@@ -1,4 +1,4 @@
-owslib
+owslib==0.28.1
 geopandas
 lonboard
 pyarrow
