@@ -1,7 +1,7 @@
 algorithm_description: Download and save current NIFC WFIGS reported wildfire perimeters
-algorithm_name: eis-feds-nifc-scraper
+algorithm_name: eis-nifc-scraper
 algorithm_version: main
-build_command: dps_build_env.sh
+build_command: fire-utils/dps_build_env.sh
 disk_space: 1GB
 docker_container_url: mas.maap-project.org/root/maap-workspaces/custom_images/maap_base:v5.0.0
 inputs:
@@ -10,4 +10,4 @@ inputs:
   positional: []
 queue: maap-dps-worker-8gb
 repository_url: https://github.com/zebbecker/fire-utils
-run_command: dps_run.sh
+run_command: fire-utils/dps_run.sh
