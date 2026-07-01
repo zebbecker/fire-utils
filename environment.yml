@@ -1,0 +1,7 @@
+name: scraper
+channels:
+  - conda-forge
+dependencies:
+  - s3fs
+  - pyarrow
+  - geopandas
