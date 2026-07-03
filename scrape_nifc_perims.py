@@ -49,13 +49,13 @@ nifc_perimeters.to_parquet(local_path)
 fs = s3fs.S3FileSystem()
 while attempt < max_attempts:
     try:
-        fs.put(local_path, s3_path)
+        fs.put_file(local_path, s3_path)
 
         print(f"Successfully saved {query_time}")
         break
 
     except Exception as e:
-        attempts += 1
+        attempt += 1
         print(
             f"Error occurred for saving {query_time} (attempt {attempt}/{max_attempts}): {e}"
         )
