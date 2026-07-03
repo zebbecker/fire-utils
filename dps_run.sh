@@ -2,4 +2,5 @@
 set -euo pipefail
 # Entrypoint script used to trigger NIFC scraping job on DPS 
 
+pwd
 conda run --live-stream --name scraper python ~/fire-utils/scrape_nifc_perims.py
